@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(),
     NgbDropdownModule,
     AppRoutingModule
   ],

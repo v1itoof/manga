@@ -1,62 +1,64 @@
 <header class="header">
   <div class="d-flex align-items-center header-lado-esquerdo">
     <span class="logo">
-      <h1>LOGO</h1>
+      <h1>MangaVerse</h1>
     </span>
     <ul class="ul-lista-nav">
       <li class="li-lista-nav">
         <div ngbDropdown class="d-inline-block">
           <a class="navegar-link" id="dropdownBasic1" ngbDropdownToggle>Navegar</a>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
-            <div class="dropdown-menu-left">
-              <a href="#" class="item-dropdown" ngbDropdownItem>Populares</a>
-              <a href="#" class="item-dropdown" ngbDropdownItem>Novidades</a>
-              <a href="#" class="item-dropdown" ngbDropdownItem>Ordem Alfabetica</a>
-            </div>
-            <div class="dropdown-menu-right">
-              <div class="generos-div">
-                <h5>Gêneros</h5>
-                <div class="todas-listas">
-                  <div class="lista-generos">
-                      <ul>
-                          <li>Ação</li>
-                          <li>Aventura</li>
-                          <li>Comédia</li>
-                          <li>Drama</li>
-                      </ul>
-                  </div>
-                  <div class="lista-generos">
-                      <ul>
-                          <li>Fantasia</li>
-                          <li>Ficção Científica</li>
-                          <li>Romance</li>
-                          <li>Terror</li>
-                      </ul>
-                  </div>
-                  <div class="lista-generos">
-                      <ul>
-                          <li>Mistério</li>
-                          <li>Esporte</li>
-                          <li>Histórico</li>
-                          <li>Slice of Life</li>
-                      </ul>
+            <div class="content-menu-dropdown">
+              <div class="dropdown-menu-left">
+                <a href="#" class="item-dropdown" ngbDropdownItem>Populares</a>
+                <a href="#" class="item-dropdown" ngbDropdownItem>Novidades</a>
+                <a href="#" class="item-dropdown" ngbDropdownItem>Ordem Alfabetica</a>
+              </div>
+              <div class="dropdown-menu-right">
+                <div class="generos-div">
+                  <h5>Gêneros</h5>
+                  <div class="todas-listas">
+                    <div class="lista-generos">
+                        <ul>
+                            <li><a href="#" class="item-dropdown">Ação</a></li>
+                            <li><a href="#" class="item-dropdown">Aventura</a></li>
+                            <li><a href="#" class="item-dropdown">Comédia</a></li>
+                            <li><a href="#" class="item-dropdown">Drama</a></li>
+                        </ul>
+                    </div>
+                    <div class="lista-generos">
+                        <ul>
+                            <li><a href="#" class="item-dropdown">Fantasia</a></li>
+                            <li><a href="#" class="item-dropdown">Ficção Científica</a></li>
+                            <li><a href="#" class="item-dropdown">Romance</a></li>
+                            <li><a href="#" class="item-dropdown">Terror</a></li>
+                        </ul>
+                    </div>
+                    <div class="lista-generos">
+                        <ul>
+                            <li><a href="#" class="item-dropdown">Mistério</a></li>
+                            <li><a href="#" class="item-dropdown">Esporte</a></li>
+                            <li><a href="#" class="item-dropdown">Histórico</a></li>
+                            <li><a href="#" class="item-dropdown">Slice of Life</a></li>
+                        </ul>
+                    </div>
                   </div>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </div>
       </li>
-      <li>Forum</li>
+      <li><a href="">Forum</a></li>
     </ul>
   </div>
   <div class="header-lado-direto">
     <div ngbDropdown class="d-inline-block dropdown-user">
       <a class="user-link" id="dropdownBasic2" ngbDropdownToggle><i class="fa-regular fa-circle-user"></i></a>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic2" >
-        <button ngbDropdownItem>Action - 1</button>
-        <button ngbDropdownItem>Another Action</button>
-        <button ngbDropdownItem>Something else is here</button>
+      <div class="content-menu-user" ngbDropdownMenu aria-labelledby="dropdownBasic2" >
+        <a href="#" class="item-dropdown" ngbDropdownItem>Favoritos</a>
+        <a href="#" class="item-dropdown" ngbDropdownItem>Minha Conta</a>
+        <a href="#" class="item-dropdown" ngbDropdownItem>Logout</a>
       </div>
     </div>
   </div>
