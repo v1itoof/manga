@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  align-items: center;
+  background: #212328;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+.header .header-lado-direto .dropdown-user .user-link{
+  font-size: 25px;
+  color: white;
+}
+.header span h1{
+  margin: 0;
+}
+.header .ul-lista-nav{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.header .ul-lista-nav .li-lista-nav{
+  margin-right: 20px;
+}
+.header .ul-lista-nav .li-lista-nav .custom-dropdown-menu{
+  position: absolute;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw;
+}
+.header .ul-lista-nav .li-lista-nav .navegar-link{
+  text-decoration: none;
+  color: white;
+}
+.header .ul-lista-nav .li-lista-nav .navegar-link:hover{
+  cursor: pointer;
+}

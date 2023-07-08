@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="d-flex align-items-center header-lado-esquerdo">
+    <span class="logo">
+      <h1>LOGO</h1>
+    </span>
+    <ul class="ul-lista-nav">
+      <li class="li-lista-nav">
+        <div ngbDropdown class="d-inline-block">
+          <a class="navegar-link" id="dropdownBasic1" ngbDropdownToggle>Navegar</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+            <button ngbDropdownItem>Action - 1</button>
+            <button ngbDropdownItem>Another Action</button>
+            <button ngbDropdownItem>Something else is here</button>
+          </div>
+        </div>
+      </li>
+      <li>Forum</li>
+    </ul>
+  </div>
+  <div class="header-lado-direto">
+    <div ngbDropdown class="d-inline-block dropdown-user">
+      <a class="user-link" id="dropdownBasic2" ngbDropdownToggle><i class="fa-regular fa-circle-user"></i></a>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic2" >
+        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+  </div>
+</header>
