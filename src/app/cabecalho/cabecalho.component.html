@@ -1,7 +1,7 @@
 <header class="header">
   <div class="d-flex align-items-center header-lado-esquerdo">
     <span class="logo">
-      <h1>MangaVerse</h1>
+      <h3>MangaVerse</h3>
     </span>
     <ul class="ul-lista-nav">
       <li class="li-lista-nav">
@@ -52,13 +52,25 @@
       <li><a href="">Forum</a></li>
     </ul>
   </div>
-  <div class="header-lado-direto">
-    <div ngbDropdown class="d-inline-block dropdown-user">
-      <a class="user-link" id="dropdownBasic2" ngbDropdownToggle><i class="fa-regular fa-circle-user"></i></a>
-      <div class="content-menu-user" ngbDropdownMenu aria-labelledby="dropdownBasic2" >
-        <a href="#" class="item-dropdown" ngbDropdownItem>Favoritos</a>
-        <a href="#" class="item-dropdown" ngbDropdownItem>Minha Conta</a>
-        <a href="#" class="item-dropdown" ngbDropdownItem>Logout</a>
+  <div class="header-lado-direito">
+    <div class="d-flex align-items-center content-nav-lado-direito">
+      <div class="content-pesquisa">
+        <div class="js_input_pesquisa" style="display: none; width: 100%;">
+          <div class="input-pesquisa">
+            <input id="input-pesqusa-manga" type="text">
+          </div>
+        </div>
+        <a class="me-5 botao-pesquisar js_botao_pesquisar js_input_fechado" href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+      <div ngbDropdown class="d-inline-block dropdown-user">
+        <a class="user-link" id="dropdownBasic2" ngbDropdownToggle><i class="fa-regular fa-circle-user"></i></a>
+        <div class="content-menu-user" ngbDropdownMenu aria-labelledby="dropdownBasic2" >
+          <a href="#" class="item-dropdown" ngbDropdownItem>Favoritos</a>
+          <a href="#" class="item-dropdown" ngbDropdownItem>Minha Conta</a>
+          <a href="#" class="item-dropdown" ngbDropdownItem>Logout</a>
+        </div>
       </div>
     </div>
   </div>
