@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { IonicModule } from '@ionic/angular';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

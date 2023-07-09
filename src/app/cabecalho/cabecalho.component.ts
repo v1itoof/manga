@@ -21,16 +21,17 @@ export class CabecalhoComponent {
         $('.js_input_pesquisa').show('slow');
         console.log('teste');
 
-        setTimeout(function() {
-          if ($('#input-pesqusa-manga').val() === '') {
+    });
+
+    setInterval(function() {
+        if ($('#input-pesqusa-manga').val() === '') {
             $('.js_botao_pesquisar').removeClass('js_input_aberto');
             $('.js_botao_pesquisar').addClass('js_input_fechado');
 
             $('.js_input_pesquisa').hide('slow');
-            console.log('teste');
-          }
-        }, 5000);
-      });
+        }
+    }, 5000);
+
     });
   }
 }
