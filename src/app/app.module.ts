@@ -7,17 +7,22 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     NgbDropdownModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
