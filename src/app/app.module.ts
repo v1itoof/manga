@@ -9,6 +9,7 @@ import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    CarouselModule.forRoot(),
     IonicModule.forRoot(),
     NgbDropdownModule,
     HttpClientModule,

@@ -8,7 +8,7 @@ import { ListResponseModel } from '../models/listResponseModel';
   providedIn: 'root'
 })
 export class MangaService {
-  apiUrl:string="https://api.jikan.moe/v4/manga?count=30";
+  apiUrl:string="https://api.jikan.moe/v4/manga?all";
 
   constructor(private httpclient:HttpClient) { }
 

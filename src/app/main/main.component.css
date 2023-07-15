@@ -1,0 +1,21 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.box-main{
+  background: black;
+  height: 100vh;
+  width: 100%;
+}
+.box-main .content-main{
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.box-main .content-main .carrosel{
+  width: 50%;
+}
+
+ 
