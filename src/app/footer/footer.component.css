@@ -44,3 +44,18 @@ a{
 .footer .content-footer .generos-list .todas-listas .lista-generos .primeira-lista{
   margin-right: 15px;
 }
+.footer .content-footer div ul li{
+  transition: .5s;
+}
+.footer .content-footer div ul li:hover{
+  background: #3A4750;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer .content-footer div ul li a{
+  transition: .5s;
+}
+.footer .content-footer div ul li:hover a{
+  color: #0ee1b0;
+  margin-left: 5px;
+}

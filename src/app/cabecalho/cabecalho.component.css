@@ -58,8 +58,6 @@ a{
   transition: .5s;
 }
 .header .header-lado-direito .content-nav-lado-direito .botao-pesquisar:hover{
-
-
   color: #0ee1b0;
 }
 .header .header-lado-direito .dropdown-user .content-menu-user{
@@ -132,6 +130,8 @@ a{
 }
 .header .ul-lista-nav .li-lista-nav .custom-dropdown-menu .dropdown-menu-left .item-dropdown:hover{
   background: #3A4750;
+  border-radius: 10px;
+  padding-left: 15px;
   color: #0ee1b0;
 }
 
@@ -158,6 +158,8 @@ a{
 }
 .header .ul-lista-nav .li-lista-nav .custom-dropdown-menu .dropdown-menu-right .todas-listas .lista-generos ul li:hover{
   background: #3A4750;
+  border-radius: 10px;
+  padding-left: 15px;
   cursor: pointer;
 }
 .header .ul-lista-nav .li-lista-nav .custom-dropdown-menu .dropdown-menu-right .todas-listas .lista-generos ul li:hover a{
