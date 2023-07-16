@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarroselComponent } from './main/carrosel/carrosel.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     AppComponent,
     CabecalhoComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    CarroselComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     IonicModule.forRoot(),
     NgbDropdownModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

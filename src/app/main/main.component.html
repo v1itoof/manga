@@ -1,5 +1,15 @@
 <div class="box-main">
   <div class="content-main">
-
+    <ngx-slick-carousel class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+      (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)"
+      (afterChange)="afterChange($event)"
+      (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let mangas of mangas" class="slide manga-img-carrossel">
+        <img src="{{ mangas.images.jpg.image_url }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
   </div>
 </div>
