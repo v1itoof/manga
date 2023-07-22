@@ -32,6 +32,11 @@ export class MainComponent {
 
   constructor(private mangaService:MangaService) { }
 
+  limitWords(description: string, limit: number): string {
+    const words = description.split(' ');
+    return words.slice(0, limit).join(' ');
+  }
+  
   ngOnInit(): void {
     this.getMangas();
   }

@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarroselComponent } from './main/carrosel/carrosel.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [

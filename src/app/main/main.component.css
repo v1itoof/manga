@@ -21,11 +21,94 @@ body, html {
   margin: 0 5px;
   width: 200px !important;
 }
+.box-main .content-main .manga-img-carrossel:hover{
+  background-color: black;
+}
 .box-main .content-main .manga-img-carrossel img{
   border-radius: 10px;
   object-fit: cover;
   width: 200px !important;
   height: 250px;
+}
+
+/* Estilo para o contêiner da imagem */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Estilo para a imagem */
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo para a sobreposição escura (overlay) */
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* A cor escura da sobreposição */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para o título */
+.image-container .title {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #fff; /* Cor do título */
+  font-size: 18px; /* Tamanho da fonte do título */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilos para o efeito de hover */
+.image-container:hover img {
+  transform: scale(1.1); /* Aumentar ligeiramente o tamanho da imagem */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Tornar a sobreposição escura visível */
+}
+
+.image-container:hover .title {
+  opacity: 1; /* Tornar o título visível */
+}
+
+/* Estilo para a descrição */
+.image-container .description {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #fff; /* Cor do texto da descrição */
+  font-size: 14px; /* Tamanho da fonte da descrição */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para o ícone de favorito */
+.image-container .favorite-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff; /* Cor do ícone de favorito */
+  font-size: 24px; /* Tamanho do ícone de favorito */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Estilos para o efeito de hover */
+.image-container:hover .description,
+.image-container:hover .favorite-icon {
+  opacity: 1;
 }
 
 

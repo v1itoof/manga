@@ -7,8 +7,16 @@
       (breakpoint)="breakpoint($event)"
       (afterChange)="afterChange($event)"
       (beforeChange)="beforeChange($event)">
-      <div ngxSlickItem *ngFor="let mangas of mangas" class="slide manga-img-carrossel">
-        <img src="{{ mangas.images.jpg.image_url }}" alt="" width="100%">
+      <div ngxSlickItem *ngFor="let manga of mangas" class="slide manga-img-carrossel">
+        <div class="image-container" id="{{ manga.mal_id }}">
+          <img src="{{ manga.images.jpg.image_url }}" alt="" width="100%">
+          <div class="overlay"></div>
+          <div class="title">{{ manga.title }}</div>
+          <div class="description">{{ limitWords(manga.synopsis, 15) }}{{ manga.synopsis.split(' ').length > 15 ? '...' : '' }}</div>
+          <div class="favorite-icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </div>
+        </div>
       </div>
     </ngx-slick-carousel>
   </div>
